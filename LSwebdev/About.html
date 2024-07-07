@@ -1,0 +1,653 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: black;
+        }
+        .Section{
+            display: block;
+            color: whitesmoke;
+        }
+        .Section h1{
+            text-align: center;
+            color: white;
+            font-size: 2.5rem;
+        }
+        .Section p{
+            font-size: 1.5rem;
+            border: 1px solid red;
+            padding: 2%;
+            transition: 1s;
+        }
+        .Section p:hover{
+            background-color: red;
+            transition: 1s;
+            color: black;
+        }
+        .trophy{
+            width: 50%;
+        }
+        .left1{
+            color: whitesmoke;
+        }
+        .winners h1{
+            color: white;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        .table {
+            width: 100%;
+            margin: 0 auto;
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            color: white;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+        }
+        caption {
+            caption-side: top;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: white;
+        }
+        thead tr th{
+            text-align: center;
+        }
+        .disclaimer{
+            display: flex;
+            justify-content: space-around;
+        }
+        .teams h1{
+            color: white;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        .teamlogos h1{
+            color: white;
+            text-align: center;
+            padding: 2%;
+            transition: 1s;
+        }
+        .teamlogos h1:hover{
+            background-color: blue;
+            transition: 1s;
+        }
+        .logo{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width:20%;
+            height:40%;
+        }
+        .team3 .logo{
+            width:10%;
+            height:20%;
+        }
+        .team8 .logo{
+            width: 30%;
+            margin-left: auto;
+        }
+        .squad{
+            font-size: 1.5rem;
+            font-family: 'Courier New', Courier, monospace;
+            border: 1px solid navy;
+            padding: 2%;
+            transition: 1s;
+        }
+        .squad:hover{
+            background-color: navy;
+            transition: 1s;
+        }
+        @media(max-width:1100px)
+        {
+            .logo{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width:30%;
+            height:20%;
+        }
+        .team3 .logo{
+            width:30%;
+            height:20%;
+        }
+        .team8 .logo{
+            width: 30%;
+            margin-left: auto;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+        }
+    </style>
+    <body>
+    <div class="upar">
+        <div class="left">
+            <img class="euros" src="euro.jpeg" alt="">
+        </div>
+        <div class="right">
+            FOOTBALL SEASON IS ON WITH <p class="UEFA">UEFA EUROS!</p>
+        </div>
+        <div class="dropdown">
+                <button class="menu">
+                    <img src="menu.png" class="menuphoto" alt="">
+                    <div class="dropdown-content">
+                        <a href="main.html">Home</a>
+                        <a href="About.html">About</a>
+                        <a href="#">Quiz</a>
+                </button>
+        </div>
+    </div>        
+        <div class="Section">
+            <h1>EUROS</h1> <br>
+            <p>European Championship, in football (soccer), a quadrennial tournament held between the member countries of the Union of European Football Associations (UEFA). The European Championship is second in prestige to the World Cup among international football tournaments. <br> The first final of the European Championship (then known as the European Nations’ Cup) took place in 1960 after two years of preliminary contests between 17 national football clubs. In 1960 the Euro final tournament consisted of four teams, but it expanded to eight teams in 1980 and 16 teams in 1996. Currently, qualification for a European Championship begins two years before the scheduled final when all members of UEFA begin playing among themselves to earn a berth in the 16-team tournament (the qualification process does not include the host country or countries, which automatically qualify for the final).</p>
+        </div>
+        <br><br>
+        <div class="winners">
+            <h1>Here's a list of past winners of Euros</h1>
+        </div>
+        <br><br>
+        <div class="table">
+            <table>
+                <caption>European Football Championship</caption>
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Winner</th>
+                        <th>Score</th>
+                        <th>Runner-up</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1960</td>
+                        <td>U.S.S.R.</td>
+                        <td>2-1</td>
+                        <td>Yugoslavia</td>
+                    </tr>
+                    <tr>
+                        <td>1964</td>
+                        <td>Spain</td>
+                        <td>2-1</td>
+                        <td>U.S.S.R.</td>
+                    </tr>
+                    <tr>
+                        <td>1968</td>
+                        <td>Italy</td>
+                        <td>2-0</td>
+                        <td>Yugoslavia</td>
+                    </tr>
+                    <tr>
+                        <td>1972</td>
+                        <td>West Germany</td>
+                        <td>3-0</td>
+                        <td>U.S.S.R.</td>
+                    </tr>
+                    <tr>
+                        <td>1976</td>
+                        <td>Czechoslovakia*</td>
+                        <td>2-2</td>
+                        <td>West Germany</td>
+                    </tr>
+                    <tr>
+                        <td>1980</td>
+                        <td>West Germany</td>
+                        <td>2-1</td>
+                        <td>Belgium</td>
+                    </tr>
+                    <tr>
+                        <td>1984</td>
+                        <td>France</td>
+                        <td>2-0</td>
+                        <td>Spain</td>
+                    </tr>
+                    <tr>
+                        <td>1988</td>
+                        <td>Netherlands</td>
+                        <td>2-0</td>
+                        <td>U.S.S.R.</td>
+                    </tr>
+                    <tr>
+                        <td>1992</td>
+                        <td>Denmark</td>
+                        <td>2-0</td>
+                        <td>Germany</td>
+                    </tr>
+                    <tr>
+                        <td>1996</td>
+                        <td>Germany</td>
+                        <td>2-1</td>
+                        <td>Czech Republic</td>
+                    </tr>
+                    <tr>
+                        <td>2000</td>
+                        <td>France</td>
+                        <td>2-1</td>
+                        <td>Italy</td>
+                    </tr>
+                    <tr>
+                        <td>2004</td>
+                        <td>Greece</td>
+                        <td>1-0</td>
+                        <td>Portugal</td>
+                    </tr>
+                    <tr>
+                        <td>2008</td>
+                        <td>Spain</td>
+                        <td>1-0</td>
+                        <td>Germany</td>
+                    </tr>
+                    <tr>
+                        <td>2012</td>
+                        <td>Spain</td>
+                        <td>4-0</td>
+                        <td>Italy</td>
+                    </tr>
+                    <tr>
+                        <td>2016</td>
+                        <td>Portugal</td>
+                        <td>1-0</td>
+                        <td>France</td>
+                    </tr>
+                    <tr>
+                        <td>2020**</td>
+                        <td>Italy***</td>
+                        <td>1-1</td>
+                        <td>England</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="disclaimer">
+                <p>*Czechoslovakia won penalty shoot-out 5–3.</p>
+                <p>**Postponed until 2021 because of the COVID-19 pandemic.</p>
+                <p>***Italy won penalty shoot-out 3–2.</p>
+            </div>
+        </div>
+        <br><br>
+        <div class="teams">
+            <h1>Participating teams in Euros 2024</h1>
+        </div>
+        <br><br>
+        <div class="teamlogos">
+            <div class="team1">
+                <h1>Italy</h1>
+                <img src="italylogo.png" class="logo" alt="">
+                <br><br><br>
+                <p class="squad">Goalkeepers: Gianluigi Donnarumma (Paris), Alex Meret (Napoli), Guglielmo Vicario (Tottenham) <br>
+
+                    Defenders: Alessandro Bastoni (Inter), Raoul Bellanova (Torino), Alessandro Buongiorno (Torino), Riccardo Calafiori (Bologna), Andrea Cambiaso (Juventus), Matteo Darmian (Inter), Giovanni Di Lorenzo (Napoli), Federico Dimarco (Inter), Federico Gatti (Juventus), Gianluca Mancini (Roma)
+                    <br>
+                    Midfielders: Nicolò Barella (Inter), Bryan Cristante (Roma), Nicolò Fagioli (Juventus), Davide Frattesi (Inter), Jorginho (Arsenal), Lorenzo Pellegrini (Roma)
+                    <br>
+                    Forwards: Federico Chiesa (Juventus), Stephan El Shaarawy (Roma), Michael Folorunsho (Hellas Verona), Giacomo Raspadori (Napoli), Mateo Retegui (Genoa), Gianluca Scamacca (Atalanta), Mattia Zaccagni (Lazio)</p>
+            </div>
+            <br><br><br>
+            <div class="team2">
+                <h1>Germany</h1>
+                <img src="germany.png" class="logo" alt="">
+                <br><br><br>
+                <p class="squad">
+                    Goalkeepers: Oliver Baumann (Hoffenheim), Manuel Neuer (Bayern München), Marc-André ter Stegen (Barcelona)
+<br>
+Defenders: Waldemar Anton (Stuttgart), Emre Can (Dortmund), Benjamin Henrichs (Leipzig), Joshua Kimmich (Bayern München), Robin Koch (Frankfurt), Maximilian Mittelstädt (Stuttgart), David Raum (Leipzig), Antonio Rüdiger (Real Madrid), Nico Schlotterbeck (Dortmund), Jonathan Tah (Leverkusen)
+<br>
+Midfielders: Robert Andrich (Leverkusen), Chris Führich (Stuttgart), İlkay Gündoğan (Barcelona), Pascal Gross (Brighton), Toni Kroos (Real Madrid), Jamal Musiala (Bayern München), Leroy Sané (Bayern München), Florian Wirtz (Leverkusen)
+<br>
+Forwards: Maximilian Beier (Hoffenheim), Niclas Füllkrug (Dortmund), Kai Havertz (Arsenal), Thomas Müller (Bayern München), Deniz Undav (Stuttgart)
+                </p>
+            </div>
+            <br><br><br>
+            <div class="team3">
+                <h1>Portugal</h1>
+                <img src="portugal.png" class="logo" alt="">
+                <br><br><br>
+                <p class="squad">
+                    Goalkeepers: Diogo Costa (Porto), Rui Patrício (Roma), José Sá (Wolves)
+<br>
+Defenders: João Cancelo (Barcelona), Diogo Dalot (Manchester United), Rúben Dias (Manchester City), Gonçalo Inácio (Sporting CP), Nuno Mendes (Paris), Pepe (Porto), Nélson Semedo (Wolves), António Silva (Benfica)
+<br>
+Midfielders: Danilo (Paris), Bruno Fernandes (Manchester United), Pedro Neto (Wolves), João Neves (Benfica), Rúben Neves (Al-Hilal), Matheus Nunes (Manchester City), João Palhinha (Fulham), Bernardo Silva (Manchester City), Vitinha (Paris)﻿
+<br>
+Forwards: Francisco Conceição (Porto), João Félix (Barcelona), Diogo Jota (Liverpool), Rafael Leão (AC Milan), Gonçalo Ramos (Paris), Cristiano Ronaldo (Al-Nassr)
+                </p>
+            </div>
+            <br><br><br>
+            <div class="team4">
+                <h1>France</h1>
+                 <img src="france.png" class="logo" alt="">
+                 <br><br><br>
+                 <p class="squad">
+                    Goalkeepers: Alphonse Areola (West Ham), Mike Maignan (AC Milan), Brice Samba (Lens)
+<br>
+Defenders: Jonathan Clauss (Marseille), Theo Hernández (AC Milan), Ibrahima Konaté (Liverpool), Jules Koundé (Barcelona), Ferland Mendy (Real Madrid), Benjamin Pavard (Inter), William Saliba (Arsenal), Dayot Upamecano (Bayern München)
+<br>
+Midfielders: Eduardo Camavinga (Real Madrid), Youssouf Fofana (Monaco), Antoine Griezmann (Atlético de Madrid), N'Golo Kanté (Al-Nassr), Adrien Rabiot (Juventus), Aurélien Tchouameni (Real Madrid), Warren Zaïre-Emery (Paris)
+<br>
+Forwards: Bradley Barcola (Paris), Kingsley Coman (Bayern München), Ousmane Dembélé (Paris), Olivier Giroud (AC Milan), Randal Kolo Muani (Paris), Kylian Mbappé (Paris), Marcus Thuram (Inter)
+                 </p>
+                </div>
+                <br><br><br>
+            <div class="team5">
+                <h1>England</h1>
+                <img src="england.png" class="logo" alt="">
+                <br><br><br>
+                <p class="squad">
+                    Goalkeepers: Dean Henderson (Crystal Palace), Jordan Pickford (Everton), Aaron Ramsdale (Arsenal)
+<br>
+Defenders: Trent Alexander-Arnold (Liverpool), Lewis Dunk (Brighton), Joe Gomez (Liverpool), Marc Guéhi (Crystal Palace), Ezri Konsa (Aston Villa), Luke Shaw (Manchester United), John Stones (Manchester City), Kieran Trippier (Newcastle), Kyle Walker (Manchester City)
+<br>
+Midfielders: Jude Bellingham (Real Madrid), Phil Foden (Manchester City), Conor Gallagher (Chelsea), Kobbie Mainoo (Manchester United), Cole Palmer (Chelsea), Declan Rice (Arsenal), Adam Wharton (Crystal Palace)
+<br>
+Forwards: Jarrod Bowen (West Ham), Eberechi Eze (Crystal Palace), Anthony Gordon (Newcastle), Harry Kane (Bayern München), Bukayo Saka (Arsenal), Ivan Toney (Brentford), Ollie Watkins (Aston Villa)
+                </p>
+            </div>
+            <br><br><br>
+            <div class="team6">
+                <h1>Netherlands</h1>
+                <img src="netherlands.jpeg" class="logo" alt="">
+                <br><br><br>
+                <p class="squad">
+                    Goalkeepers: Justin Bijlow (Feyenoord), Mark Flekken (Brentford), Bart Verbruggen (Brighton)
+<br>
+Defenders: Nathan Aké (Manchester City), Daley Blind (Girona), Matthijs de Ligt (Bayern München), Stefan de Vrij (Inter), Denzel Dumfries (Inter), Lutsharel Geertruida (Feyenoord), Micky van de Ven (Tottenham), Virgil van Dijk (Liverpool)
+<br>
+Midfielders: Ryan Gravenberch (Liverpool), Ian Maatsen (Dortmund), Tijjani Reijnders (AC Milan), Jerdy Schouten (PSV), Joey Veerman (PSV), Georginio Wijnaldum (Al Ettifaq)
+<br>
+Forwards: Steven Bergwijn (Ajax), Brian Brobbey (Ajax), Memphis Depay (Atlético de Madrid), Jeremie Frimpong (Leverkusen), Cody Gakpo (Liverpool), Donyell Malen (Dortmund), Xavi Simons (Leipzig), Wout Weghorst (Hoffenheim), Joshua Zirkzee (Bologna)
+                </p>
+            </div>
+            <br><br><br>
+            <div class="team7">
+                <h1>Switzerland</h1>
+                <img src="swiss.png" class="logo" alt="">
+                <br><br><br>
+                <p class="squad">
+                    Goalkeepers: Gregor Kobel (Dortmund), Yvon Mvogo (Lorient), Yann Sommer (Inter)
+<br>
+Defenders: Manuel Akanji (Manchester City), Nico Elvedi (Mönchengladbach), Ricardo Rodríguez (Torino), Fabian Schär (Newcastle), Leonidas Stergiou (Stuttgart), Silvan Widmer (Mainz), Cédric Zesiger (Wolfsburg)
+<br>
+Midfielders: Michel Aebischer (Bologna), Remo Freuler (Bologna), Ardon Jashari (Luzern), Fabian Rieder (Rennes), Xherdan Shaqiri (Chicago Fire), Vincent Sierro (Toulouse), Renato Steffen (Lugano), Ruben Vargas (Augsburg), Granit Xhaka (Leverkusen), Denis Zakaria (Monaco), Steven Zuber (AEK Athens)
+<br>
+Forwards: Zeki Amdouni (Burnley), Kwadwo Duah (Ludogorets), Breel Embolo (Monaco), Dan Ndoye (Bologna), Noah Okafor (AC Milan)
+                </p>
+            </div>
+            <br><br><br>
+            <div class="team8">
+                <h1>Turkiye</h1>
+                <img src="muslim.png" class="logo" alt="">
+                <br><br><br>
+                <p class="squad">
+                    Goalkeepers: Altay Bayındır (Manchester United), Mert Günok (Beşiktaş), Uğurcan Çakır (Trabzonspor)
+<br>
+Defenders: Samet Akaydin (Panathinaikos), Abdülkerim Bardakcı (Galatasaray), Zeki Çelik (Roma), Merih Demiral (Al-Ahli), Ferdi Kadıoğlu (Fenerbahçe), Ahmetcan Kaplan (Ajax), Mert Müldür (Fenerbahçe)
+<br>
+Midfielders: Hakan Çalhanoğlu (Inter), İsmail Yüksek (Fenerbahçe), Kaan Ayhan (Galatasaray), Okay Yokuşlu (West Brom), Orkun Kökçü (Benfica), Salih Özcan (Dortmund)
+<br>
+Forwards: Yunus Akgün (Leicester), Kerem Aktürkoğlu (Galatasaray), Arda Güler (Real Madrid), İrfan Can Kahveci (Fenerbahçe), Semih Kılıçsoy (Beşiktaş), Cenk Tosun (Beşiktaş), Yusuf Yazıcı (Lille), Bertuğ Yıldırım (Rennes), Kenan Yıldız (Juventus), Barış Alper Yılmaz (Galatasaray)
+                </p>
+            </div>
+            <br><br><br>
+            <div class="team9">
+                <h1>Croatia</h1>
+                <img src="croatia.png" class="logo" alt="">
+                <br><br><br>
+                <p class="squad">
+                    Goalkeepers: Ivica Ivušić (Pafos), Nediljko Labrović (Rijeka), Dominik Livaković (Fenerbahçe)
+<br>
+Defenders: Martin Erlić (Sassuolo), Joško Gvardiol (Manchester City), Josip Juranović (Union Berlin), Marin Pongračić (Lecce), Borna Sosa (Ajax), Josip Stanišić (Leverkusen), Josip Šutalo (Ajax), Domagoj Vida (AEK Athens)
+<br>
+Midfielders: Martin Baturina (Dinamo Zagreb), Marcelo Brozović (Al-Nassr), Mateo Kovačić (Manchester City), Lovro Majer (Wolfsburg), Luka Modrić (Real Madrid), Mario Pašalić (Atalanta), Luka Sučić (Salzburg), Nikola Vlašić (Torino)
+<br>
+Forwards: Ante Budimir (Osasuna), Luka Ivanušec (Feyenoord), Andrej Kramarić (Hoffenheim), Marco Pašalić (Rijeka), Ivan Perišić (Hajduk Split), Bruno Petković (Dinamo Zagreb), Marko Pjaca (Rijeka)
+                </p>
+            </div>
+            <br><br><br>
+            <div class="team10">
+                <h1>Belgium</h1>
+                <img src="belgium.jpeg" class="logo" alt="">
+                <br><br><br>
+                <p class="squad">
+                    Goalkeepers: Koen Casteels (Wolfsburg), Thomas Kaminski (Luton), Matz Sels (Nottingham Forest)
+<br>
+Defenders: Timothy Castagne (Fulham), Zeno Debast (Anderlecht), Wout Faes (Leicester), Thomas Meunier (Trabzonspor), Arthur Theate (Rennes), Jan Vertonghen (Anderlecht)
+<br>
+Midfielders: Kevin De Bruyne (Manchester City), Maxim De Cuyper (Club Brugge), Orel Mangala (Lyon), Amadou Onana (Everton), Youri Tielemans (Aston Villa), Leandro Trossard (Arsenal), Arthur Vermeeren (Atlético de Madrid), Aster Vranckx (Wolfsburg), Axel Witsel (Atlético de Madrid)
+<br>
+Forwards: Johan Bakayoko (PSV Eindhoven), Yannick Carrasco (Al-Shabab), Charles De Ketelaere (Atalanta), Jérémy Doku (Manchester City), Romelu Lukaku (Roma), Dodi Lukebakio (Sevilla), Loïs Openda (Leipzig)
+                </p>
+            </div>
+            <br><br><br>
+            <div class="team11">
+                <h1>Austria</h1>
+                <img src="austria.png" class="logo" alt="">
+                <br><br><br>
+                <p class="squad">
+                    Goalkeepers: Niklas Hedl (Rapid Wien), Heinz Lindner (Union SG), Patrick Pentz (Brøndby)
+<br>
+Defenders: Flavius Daniliuc (Salzburg), Kevin Danso (Lens), Philipp Lienhart (Freiburg), Phillipp Mwene (Mainz), Stefan Posch (Bologna), Leopold Querfeld (Rapid Wien), Gernot Trauner (Feyenoord), Patrick Wimmer (Wolfsburg), Maximilian Wöber (Mönchengladbach)
+<br>
+Midfielders: Christoph Baumgartner (Leipzig), Florian Grillitsch (Hoffenheim), Marco Grüll (Rapid Wien), Florian Kainz (Köln), Konrad Laimer (Bayern München), Alexander Prass (Sturm Graz), Marcel Sabitzer (Dortmund), Romano Schmid (Werder Bremen), Matthias Seidl (Rapid Wien), Nicolas Seiwald (Leipzig)
+<br>
+Forwards: Marko Arnautović (Inter), Maximilian Entrup (Hartberg), Michael Gregoritsch (Freiburg), Andreas Weimann (West Brom)
+                </p>
+            </div>
+            <br><br><br>
+            <div class="team12">
+                <h1>Denmark</h1>
+                <img src="denmark.jpeg" class="logo" alt="">
+                <br><br><br>
+                <p class="squad">
+                    Goalkeepers: Mads Hermansen (Leicester), Frederik Rønnow (Union Berlin), Kasper Schmeichel (Anderlecht)
+<br>
+Defenders: Joachim Andersen (Crystal Palace), Alexander Bah (Benfica), Andreas Christensen (Barcelona), Mathias Jørgensen (Brentford), Simon Kjær (AC Milan), Rasmus Kristensen (Roma), Victor Kristiansen (Bologna), Joakim Mæhle (Wolfsburg), Jannik Vestergaard (Leicester)
+<br>
+Midfielders: Jacob Bruun Larsen (Burnley), Thomas Delaney (Anderlecht), Anders Dreyer (Anderlecht), Christian Eriksen (Manchester United), Morten Hjulmand (Sporting CP), Pierre-Emile Højbjerg (Tottenham), Mathias Jensen (Brentford), Christian Nørgaard (Brentford)
+<br>
+Forwards: Mikkel Damsgaard (Brentford), Kasper Dolberg (Anderlecht), Rasmus Højlund (Manchester United), Andreas Skov Olsen (Club Brugge), Yussuf Poulsen (Leipzig), Jonas Wind (Wolfsburg)
+                </p>
+            </div>
+            <br><br><br>
+            <div class="team13">
+                <h1>Georgia</h1>
+                <img src="eorgia.png" class="logo" alt="">
+                <br><br><br>
+                <p class="squad">
+                    Goalkeepers: Luka Gugeshashvili (Qarabağ), Giorgi Loria (Dinamo Tbilisi), Giorgi Mamardashvili (Valencia)
+<br>
+Defenders: Lasha Dvali (APOEL), Giorgi Gocholeishvili (Shakhtar Donetsk), Giorgi Gvelesiani (Persepolis), Otar Kakabadze (Cracovia), Guram Kashia (Slovan Bratislava), Solomon Kverkvelia (Al-Okhdood), Luka Lochoshvili (Cremonese), Jemal Tabidze (Panetolikos)
+<br>
+Midfielders: Sandro Altunashvili (Wolfsberger), Giorgi Chakvetadze (Watford), Zuriko Davitashvili (Bordeaux), Otar Kiteishvili (Sturm Graz), Giorgi Kochorashvili (Levante), Nika Kvekveskiri (Lech Poznań), Saba Lobjanidze (Atlanta United), Anzor Mekvabishvili (Universitatea Craiova), Gabriel Sigua (Basel), Levan Shengelia (Panetolikos), Giorgi Tsitaishvili (Dinamo Batumi)
+<br>
+Forwards: Khvicha Kvaratskhelia (Napoli), Giorgi Kvilitaia (APOEL), Georges Mikautadze (Metz), Budu Zivzivadze (Karlsruhe)﻿
+                </p>
+            </div>
+            <br><br><br>
+            <div class="team14">
+                <h1>Romania</h1>
+                <img src="romania.png" class="logo" alt="">
+                <br><br><br>
+                <p class="squad">
+                    Goalkeepers: Horațiu Moldovan (Atlético de Madrid), Florin Niță (Gaziantep), Ștefan Târnovanu (FCSB)
+<br>
+Defenders: Nicușor Bancu (Universitatea Craiova), Andrei Burcă (Al-Okhdood), Radu Drăguşin (Tottenham), Vasile Mogoş (CFR Cluj), Ionuț Nedelcearu (Palermo), Bogdan Racovițan (Rakow), Andrei Rațiu (Rayo Vallecano), Adrian Rus (Pafos)﻿
+<br>
+Midfielders: Alexandru Cicâldău (Konyaspor), Ianis Hagi (Alavés), Marius Marin (Pisa), Răzvan Marin (Empoli), Darius Olaru (FCSB), Deian Sorescu (Gaziantep), Nicolae Stanciu (Damac), Adrian Şut (FCSB)
+<br>
+Forwards: Denis Alibec (Muaither), Daniel Bîrligea (CFR Cluj), Florinel Coman (FCSB), Denis Drăguş (Gaziantep), Dennis Man (Parma), Valentin Mihăilă (Parma), George Puşcaş (Bari)
+                </p>
+            </div>
+            <br><br><br>
+            <div class="team15">
+                <h1>Slovakia</h1>
+                <img src="slvk.png" class="logo" alt="">
+                <br><br><br>
+                <p class="squad">
+                    Goalkeepers: Martin Dúbravka (Newcastle), Henrich Ravas (New England), Marek Rodák (Fulham)
+<br>
+Defenders: Vernon De Marco (Hatta), Norbert Gyömbér (Salernitana), Dávid Hancko (Feyenoord), Sebastián Kóša (Spartak Trnava), Adam Obert (Cagliari), Peter Pekarík (Hertha Berlin), Milan Škriniar (Paris), Denis Vavro (Copenhagen)
+<br>
+Midfielders: László Bénes (Hamburg), Matúš Bero (Bochum), Ondrej Duda (Hellas Verona), Patrik Hrošovský (Genk), Juraj Kucka (Slovan Bratislava), Stanislav Lobotka (Napoli), Tomáš Rigo (Ostrava)
+<br>
+Forwards: Róbert Boženík (Boavista), Dávid Ďuriš (Ascoli), Lukáš Haraslín (Sparta Praha), Leo Sauer (Feyenoord), Ivan Schranz (Slavia Praha), David Strelec (Slovan Bratislava), Tomáš Suslov (Verona), Ľubomír Tupta (Slovan Liberec)
+                </p>
+            </div>
+            <br><br><br>
+            <div class="team16">
+                <h1>Slovenia</h1>
+                <img src="slvn.jpeg" class="logo" alt="">
+                <br><br><br>
+                <p class="squad">
+                    Goalkeepers: Vid Belec (APOEL), Jan Oblak (Atlético de Madrid), Igor Vekić (Vejle)
+<br>
+Defenders: Jure Balkovec (Alanyaspor), Jaka Bijol (Udinese), Miha Blažič (Lech Poznań), David Brekalo (Orlando City), Vanja Drkušić (Sochi), Erik Janža (Górnik Zabrze), Žan Karničnik (Celje), Jon Gorenc Stanković (Sturm Graz), Petar Stojanović (Sampdoria)
+<br>
+Midfielders: Timi Elšnik (Olimpija Ljubljana), Adam Gnezda Čerin (Panathinaikos), Tomi Horvat (Sturm Graz), Josip Iličić (Maribor), Jasmin Kurtić (Südtirol), Sandi Lovrić (Udinese), Benjamin Verbič (Panathinaikos), Adrian Zeljković (Spartak Trnava), Nino Žugelj (Bodø/Glimt)
+<br>
+Forwards: Žan Celar (Lugano), Jan Mlakar (Pisa), Benjamin Šeško (Leipzig), Andraž Šporar (Panathinaikos), Žan Vipotnik (Bordeaux)
+                </p>
+            </div>
+            <br><br><br>
+            <div class="team17">
+                <h1>Ukraine</h1>
+                <img src="ukr.png" class="logo" alt="">
+                <br><br><br>
+                <p class="squad">
+                    Goalkeepers: Georgiy Bushchan (Dynamo Kyiv), Andriy Lunin (Real Madrid), Anatoliy Trubin (Benfica)
+<br>
+Defenders: Valeriy Bondar (Shakhtar Donetsk), Yukhym Konoplia (Shakhtar Donetsk), Mykola Matviyenko (Shakhtar Donetsk), Bogdan Mykhaylichenko (Polissya Zhytomyr), Vitaliy Mykolenko (Everton), Oleksandr Svatok (Dnipro-1), Maksym Talovierov (LASK), Oleksandr Tymchyk (Dynamo Kyiv), Illia Zabarnyi (Bournemouth), Oleksandr Zinchenko (Arsenal)
+<br>
+Midfielders: Volodymyr Brazhko (Dynamo Kyiv), Ruslan Malinovskyi (Genoa), Mykola Shaparenko (Dynamo Kyiv), Taras Stepanenko (Shakhtar Donetsk), Georgiy Sudakov (Shakhtar Donetsk), Serhiy Sydorchuk (Westerlo), Viktor Tsygankov (Girona), Andriy Yarmolenko (Dynamo Kyiv), Oleksandr Zubkov (Shakhtar Donetsk)
+<br>
+Forwards: Artem Dovbyk (Girona), Mykhailo Mudryk (Chelsea), Vladyslav Vanat (Dynamo Kyiv), Roman Yaremchuk (Valencia)
+                </p>
+            </div>
+            <br><br><br>
+            <div class="team18">
+                <h1>Albania</h1>
+                <img src="albn.jpeg" class="logo" alt="">
+                <br><br><br>
+                <p class="squad">
+                    Goalkeepers: Etrit Berisha (Empoli), Elhan Kastrati (Cittadella), Thomas Strakosha (Brentford)
+<br>
+Defenders: Arlind Ajeti (CFR Cluj), Naser Aliji (Voluntari), Iván Balliu (Rayo Vallecano), Berat Djimsiti (Atalanta), Elseid Hysaj (Lazio), Ardian Ismajli (Empoli), Marash Kumbulla (Sassuolo), Enea Mihaj (Famalicão), Mario Mitaj (Lokomotiv Moskva)
+<br>
+Midfielders: Amir Abrashi (Grasshoppers), Kristjan Asllani (Inter), Nedim Bajrami (Sassuolo), Klaus Gjasula (Darmstadt), Qazim Laçi (Sparta Praha), Ylber Ramadani (Lecce), Taulant Seferi (Baniyas)
+<br>
+Forwards: Jasir Asani (Gwangju), Medon Berisha (Lecce), Armando Broja (Fulham), Mirlind Daku (Rubin Kazan), Arbër Hoxha (Dinamo Zagreb), Rey Manaj (Sivasspor), Ernest Muçi (Beşiktaş)
+                </p>
+            </div>
+            <br><br><br>
+            <div class="team19">
+                <h1>Czechia</h1>
+                <img src="csz.png" class="logo" alt="">
+                <br><br><br>
+                <p class="squad">
+                    Goalkeepers: Vítězslav Jaroš (Sturm Graz), Matěj Kovář (Leverkusen) Jindřich Staněk (Slavia Praha)
+<br>
+Defenders: Vladimír Coufal (West Ham), David Douděra (Slavia Praha), Robin Hranáč (Viktoria Plzeň), David Jurásek (Hoffenheim), Ladislav Krejčí (Sparta Praha), Martin Vitík (Sparta Praha), Tomáš Vlček (Slavia Praha), David Zima (Slavia Praha)
+<br>
+Midfielders: Antonín Barák (Fiorentina), Lukáš Červ (Viktoria Plzeň), Tomáš Holeš (Slavia Praha), Matěj Jurásek (Slavia Praha), Ondřej Lingr (Feyenoord), Lukáš Provod (Slavia Praha), Petr Ševčík (Slavia Praha), Tomáš Souček (West Ham), Pavel Šulc (Viktoria Plzeň)
+<br>
+Forwards: Václav Černý (Wolfsburg), Tomáš Chorý (Viktoria Plzeň), Mojmír Chytil (Slavia Praha), Adam Hložek (Leverkusen), Jan Kuchta (Sparta Praha), Patrik Schick (Leverkusen)
+                </p>
+            </div>
+            <br><br><br>
+            <div class="team20">
+                <h1>Poland</h1>
+                <img src="poland.jpeg" class="logo" alt="">
+                <br><br><br>
+                <p class="squad">
+                    Goalkeepers: Marcin Bulka (Nice), Łukasz Skorupski (Bologna), Wojciech Szczęsny (Juventus)
+<br>
+Defenders: Jan Bednarek (Southampton), Bartosz Bereszyński (Empoli), Przemysław Frankowski (Lens), Jakub Kiwior (Arsenal), Tymoteusz Puchacz (Kaiserslautern), Bartosz Salamon (Lech Poznań), Sebastian Walukiewicz (Empoli)
+<br>
+Midfielders: Paweł Dawidowicz (Hellas Verona), Kamil Grosicki (Pogoń Szczecin), Jakub Moder (Brighton), Jakub Piotrowski (Ludogorets), Taras Romanczuk (Jagiellonia Białystok), Bartosz Slisz (Atlanta United), Damian Szymański (AEK Athens), Sebastian Szymański (Fenerbahçe), Kacper Urbański (Bologna), Nicola Zalewski (Roma), Piotr Zieliński (Napoli)
+<br>
+Forwards: Adam Buksa (Antalyaspor), Robert Lewandowski (Barcelona), Krzysztof Piątek (Başakşehir), Michał Skóraś (Club Brugge), Karol Świderski (Hellas Verona)
+                </p>
+            </div>
+            <br><br><br>
+            <div class="team21">
+                <h1>Scotland</h1>
+                <img src="scotland.jpeg" class="logo" alt="">
+                <br><br><br>
+                <p class="squad">
+                    Goalkeepers: Zander Clark (Hearts), Angus Gunn (Norwich), Liam Kelly (Motherwell)
+<br>
+Defenders: Liam Cooper (Leeds), Grant Hanley (Norwich), Jack Hendry (Al-Ettifaq), Ross McCrorie (Bristol City), Scott McKenna (Copenhagen), Ryan Porteous (Watford), Anthony Ralston (Celtic), Andrew Robertson (Liverpool), Greg Taylor (Celtic), Kieran Tierney (Real Sociedad)
+<br>
+Midfielders: Stuart Armstrong (Southampton), James Forrest (Celtic), Billy Gilmour (Brighton), Ryan Jack (Rangers), John McGinn (Aston Villa), Callum McGregor (Celtic), Kenny McLean (Norwich), Scott McTominay (Manchester United), Lewis Morgan (New York RB)
+<br>
+Forwards: Ché Adams (Southampton), Ryan Christie (Bournemouth), Tommy Conway (Bristol City), Lawrence Shankland (Hearts)
+                </p>
+            </div>
+            <br><br><br>
+            <div class="team22">
+                <h1>Serbia</h1>
+                <img src="serbia.jpeg" class="logo" alt="">
+                <br><br><br>
+                <p class="squad">
+                    Goalkeepers: Vanja Milinković-Savić (Torino), Đorđe Petrović (Chelsea), Predrag Rajković (Mallorca)
+<br>
+Defenders: Srđan Babić (Spartak Moskva), Nikola Milenković (Fiorentina), Filip Mladenović (Panathinaikos), Strahinja Pavlović (Salzburg), Uroš Spajić (Crvena zvezda), Nemanja Stojić (TSC), Miloš Veljković (Werder Bremen)﻿
+<br>
+Midfielders: Veljko Birmančević (Sparta Praha), Mijat Gaćinović (AEK Athens), Nemanja Gudelj (Sevilla), Ivan Ilić (Torino), Saša Lukić (Fulham), Nemanja Maksimović (Getafe), Srdjan Mijailović (Crvena zvezda), Sergej Milinković-Savić (Al-Hilal), Lazar Vujadin Samardžić (Udinese)﻿
+<br>
+Forwards: Luka Jović (Milan), Filip Kostić (Juventus), Aleksandar Mitrović (Al-Hilal), Petar Ratkov (Salzburg), Dušan Tadić (Fenerbahçe), Dušan Vlahović (Juventus), Andrija Živković (PAOK)
+                </p>
+            </div>
+            <br><br><br>
+            <div class="team23">
+                <h1>Hungary</h1>
+                <img src="hung.png" class="logo" alt="">
+                <br><br><br>
+                <p class="squad">
+                    Goalkeepers: Dénes Dibusz (Ferencváros), Péter Gulácsi (Leipzig), Péter Szappanos (Paks)
+<br>
+Defenders: Botond Balogh (Parma), Bendegúz Bolla (Servette), Endre Botka (Ferencváros), Márton Dárdai (Hertha Berlin), Attila Fiola (Fehérvár), Miloš Kerkez (Bournemouth), Ádám Lang (Omonoia), Zsolt Nagy (Puskás Akadémia), Loïc Négo (Le Havre), Willi Orbán (Leipzig), Attila Szalai (Freiburg)
+<br>
+Midfielders: Dániel Gazdag (Philadelphia Union), Mihály Kata (MTK Budapest), László Kleinheisler (Hajduk Split), Ádám Nagy (Spezia), András Schäfer (Union Berlin), Callum Styles (Sunderland), Dominik Szoboszlai (Liverpool)
+<br>
+Forwards: Martin Ádám (Ulsan HD), Kevin Csoboth (Újpest), Kristofer Horváth (Kecskemét), Roland Sallai (Freiburg), Barnabás Varga (Ferencváros)
+                </p>
+            </div>
+            <br><br><br>
+            <div class="team24">
+                <h1>Spain</h1>
+                <img src="spain.jpeg" class="logo" alt="">
+                <br><br><br>
+                <p class="squad">
+                    Goalkeepers: David Raya (Arsenal), Alejandro Remiro (Real Sociedad), Unai Simón (Athletic Club)
+<br>
+Defenders: Dani Carvajal (Real Madrid), Marc Cucurella (Chelsea), Alejandro Grimaldo (Leverkusen), Aymeric Laporte (Al-Nassr), Robin Le Normand (Real Sociedad), Nacho (Real Madrid), Daniel Vivian (Athletic Club)
+<br>
+Midfielders: Álex Baena (Villarreal), Mikel Merino (Real Sociedad), Mikel Oyarzabal (Real Sociedad), Pedri (Barcelona), Rodri (Manchester City), Fabián Ruiz (Paris), Nico Williams (Athletic Club), Martín Zubimendi (Real Sociedad)
+<br>
+Forwards: Joselu (Real Madrid), Fermín López (Barcelona), Álvaro Morata (Atlético de Madrid), Jesús Navas (Sevilla), Dani Olmo (Leipzig), Ayoze Pérez (Betis), Ferran Torres (Barcelona), Lamine Yamal (Barcelona)
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

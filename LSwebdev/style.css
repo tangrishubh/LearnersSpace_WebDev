@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap');
+*{
+    padding:0;
+    margin:0;
+}
+@media(min-width: 300px)
+{
+body{
+    background-color: black;
+}
+.upar{
+    display: flex;
+    justify-content: space-around;
+}
+.left{
+    display: block;
+    justify-content: left;
+    margin-left: 00px ;
+}
+.right{
+    margin-top: 50px;
+    color: whitesmoke;
+}
+.UEFA{
+    text-align: center;
+    font-size: 4rem;
+    transition: 5s;
+}
+.UEFA:hover{
+    color: #EEA83D;
+    transition: 1s;
+    opacity: 1;
+}
+
+body{
+    background-color: black;
+    font-family: 'Quicksand', sans-serif;
+}
+.logo{
+    border-radius: 50%;
+    width:40px;
+    height: 40px; display: inline-block;
+}
+.dropdown{
+    display: flex;
+    align-items: center;
+}
+.menu{
+    background-color: #000;
+    border: 1px solid black;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+.dropdown-content a:hover {background-color: black; color: whitesmoke; transition: 0.5s;}
+.dropdown:hover .dropdown-content {display: block;}
+img.menuphoto{
+    width: 60%;
+}
+.header{
+    color:#dedee0;
+    position: absolute;
+    z-index: 11111111111111;
+    width:100%;
+}
+.header li{
+    display: inline-block;
+    font-size: 13px;
+    margin-left:20px;
+}
+p{
+    color: whitesmoke;
+}
+.container{
+    display: block;
+    background-color: #000;
+    position: relative;
+    margin-top:0px;
+    top:50%;
+    left:50%;
+    width: 160vh;
+    height: 90vh;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+.birt{
+    transform: rotateY(192deg) rotate(-40deg);
+    position: absolute;
+    z-index: 7;
+    right:50%;
+    bottom:25%;
+    transition: 1.5s;
+}
+.birt img{
+    width:350px;
+}
+.item{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index: 5;
+}
+.item img{
+    width:100%;
+    height:100%;
+    opacity: 0.5;
+    object-fit: cover;
+}
+.content{
+    position: absolute;
+    bottom:0px;
+    right:0px;
+    padding:20px 40px 30px 0;
+    width:330px;
+    color:#BFC3C4
+
+}
+h2{
+    position: relative;
+    z-index: 100;
+    font-family: 'Sora', sans-serif;
+    font-size: 30px;
+    color:#BFC3C4
+}
+.content1{
+    margin-top:30px;
+    padding:0 ;
+    position: relative;
+}
+.button{
+    margin:30px 0 ;
+    border:1px solid #BFC3C4;
+    text-align: center;
+    padding:10px 20px;
+    transition: 1s;
+}
+.item{
+    display: none;
+}
+.active, .hide{
+    display: block;
+}
+.active img{
+    animation: showimg 1s ease-in-out 1 forwards;
+}
+.hide img{
+    animation: hideimg 1s ease-in-out 1 forwards;
+}
+@keyframes showimg{
+    0%{
+        transform: translate(100%,0);
+    }
+    100%{
+        transform: translate(0%,0);
+    }
+}
+@keyframes hideimg{
+    0%{
+        transform: translate(0%,0);
+    }100%{
+        transform: translate(-100%,0);
+    }
+}
+.active .content h2{
+    opacity: 0;
+    animation: showcontent 0.7s ease-in-out 1s 1 forwards;
+}
+.active .content .content1{
+    opacity: 0;
+    animation: showcontent 0.7s ease-in-out 1.2s 1 forwards;
+}
+.active .content .button{
+    opacity: 0;
+    animation: showcontent 0.7s ease-in-out 1.4s 1 forwards;
+}
+.hide .content h2, .content1, .button{
+    animation: hidecontent 1.7s ease-in-out 1 forwards;
+}
+@keyframes showcontent{
+    0%{
+        filter: blur(33px);
+        transform: translate(100%,0);
+    }100%{
+        filter: blur(0px);
+        transform: translate(0%,0);
+        opacity: 1;
+    }
+}
+@keyframes hidecontent{
+    0%{
+        filter: blur(0);
+        transform: translate(0%,0);
+    }100%{
+        transform: translate(-100%,0);
+        filter: blur(33px);
+        opacity: 0;
+    }
+}
+.start .birt{
+    animation:startbirt 3s ease-in-out 1 forwards;
+}
+.birt img{
+    animation:birt 1s ease-in-out infinite alternate;
+}
+@keyframes birt{
+    0%{
+        transform: rotate(5deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes startbirt{
+    0%{
+
+    }
+    50%{
+        right: 31%;
+        bottom: 16%;
+        transform: rotateY(192deg) rotate(-52deg);
+    }
+    70%{
+        bottom: 27%;
+        transform: rotateY(192deg) rotate(-22deg);
+    }
+    100%{
+        right: 50%;
+        bottom: 25%;
+    }
+}
+.start::before{
+    position: absolute;
+    width:100%;
+    height: 4px;
+    content: '';
+    background-color: #EEA83D;
+    z-index: 111;
+    animation:time 3s ease-in-out 1 forwards
+}
+@keyframes time{
+    0%{
+        width:0;
+    }90%{
+        width:100%;
+        top:0;
+    }
+    100%{
+        top:-10px;
+    }
+}
+.button:hover{
+    background: azure;
+    color: black;
+}
+#next{
+    position: absolute;
+    z-index: 111111111111111;
+    top: 400px;
+    right: 0;
+    padding: 40px;
+    border: none;
+    background: rgba(0, 0, 0, 0.3);
+    color: whitesmoke;
+    transition: 1s;
+}
+#next:hover{
+    background: black;
+    color: whitesmoke;
+}
+.highlights h1{
+    color: whitesmoke;
+    margin-left: 20px;
+    width: max-content;
+    background-color: black;
+    transition:0.5s;
+}
+.highlights h1:hover{
+    background-color: #EEA83D;
+    color: #000;
+    transition: 1s;
+    opacity: 0.5;
+}
+.espger{
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.espger2{
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.goal{
+    width: max-content;
+}
+.scorecard{
+    display: flex;
+    justify-content: space-between;
+}
+.germany{
+    width:100%;
+}
+.spain{
+    width:100%;
+}
+.portugal{
+    width:50%;
+}
+.france{
+    width:60%;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+/* The actual timeline (the vertical ruler) */
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 240rem;
+  }
+  .timeline2 {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 310rem;
+  }
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  .timeline2::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .box {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .box::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .material {
+    padding: 20px 30px;
+    background-color: black;
+    position: relative;
+    border-radius: 6px;
+  }
+}
+@media (max-width: 1000px) 
+{
+    .timeline::after {
+        left: 31px;
+        height: 190rem;
+    }
+    .timeline2::after{
+        left: 31px;
+        height: 250rem;
+    }
+    .timeline{
+        height: 3100px;
+    }
+    .timeline2{
+        height: 4000px;
+    }
+    .container{
+        display: block;
+        align-items: center;
+        background-color: #000;
+        position: relative;
+        /* margin-top:-500px;
+        top:50%;
+        left:50%; */
+        width: 80%;
+        height: 50%;
+        /* transform: translate(-50%, -50%); */
+        overflow: hidden;
+    }
+  /* Full-width containers */
+    .box {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    /* Make sure that all arrows are pointing leftwards */
+    .box::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+    .highlights{
+        padding-top: 25rem;
+    }
+  /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+        left: 15px;
+    }
+  
+  /* Make all right containers behave like the left ones */
+    .right {
+        left: 0%;
+    }
+}
