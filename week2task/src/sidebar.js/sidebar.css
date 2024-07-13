@@ -1,0 +1,34 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Adjust spacing between buttons */
+  }
+  
+  .sidebar-button,
+  .sidebar-button-small {
+    border: none;
+    width: 50px; /* Adjust button size */
+    height: 50px; /* Adjust button size */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar-button:hover,
+  .sidebar-button-small:hover {
+    opacity: 0.8;
+  }
+  
+  .sidebar-button-small {
+    width: 30px; /* Smaller button size for smaller screens */
+    height: 30px; /* Smaller button size for smaller screens */
+  }
+  
+
+  

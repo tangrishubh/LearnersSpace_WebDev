@@ -1,0 +1,32 @@
+.custom-navbar {
+    background-color: transparent !important; /* Ensure the background is transparent */
+    box-shadow: none; /* Remove any default shadow */
+  }
+  
+  .dark-mode .custom-navbar {
+    background-color: #333333 !important; /* Dark mode background color */
+  }
+  
+  .light-mode .custom-navbar {
+    background-color: #ffffff !important; /* Light mode background color */
+  }
+  
+  .text-white {
+    color: white !important; /* Text color for dark mode */
+  }
+  
+  .text-black {
+    color: black !important; /* Text color for light mode */
+  }
+  
+  .custom-navbar .navbar-toggler {
+    border-color: white; /* Optional: Customize the color of the toggle button */
+  }
+  
+  .custom-navbar .navbar-toggler-icon {
+    background-color: white; /* Optional: Customize the color of the toggle button icon */
+  }
+  .app {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }

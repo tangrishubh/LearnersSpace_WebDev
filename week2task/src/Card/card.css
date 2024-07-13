@@ -1,0 +1,26 @@
+.playwrite-pe-draw {
+  font-family: "Playwrite PE", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.note-container {
+    padding: 20px;
+    border-radius: 10px;
+    background-image: 'url(mountain.png)';
+  }
+  
+  .save-button {
+    padding: 10px 20px; 
+    margin-top: 20px; 
+  }
+
+  .delete-button {
+    padding: 10px 20px; 
+    margin-top: 20px; 
+    margin-left: 10px; 
+    background-color: rgb(255, 0, 38); 
+    border: none;
+  }
+  #noteContent{
+    margin-top: 10px;
+  }
