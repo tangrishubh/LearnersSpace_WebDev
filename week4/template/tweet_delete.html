@@ -1,0 +1,8 @@
+{% block content %}
+<h2 class="text-center mt-4">Are you sure you want to delete?</h2>
+        <form method="post">
+            {% csrf_token %}
+            <button class="btn btn-danger">Delete</button>
+            <a href="{% url 'home' %}">Cancel</a>
+        </form>
+{% endblock %}
